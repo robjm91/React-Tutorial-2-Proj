@@ -5,7 +5,7 @@ function TitleBar(props) {
         <div className="row row-spacer">
             <div className="col-md-12" style={{padding: 0}}>
                 <div> 
-                    <h1>dCC Library</h1>
+                    <h1>Robert's Library</h1>
                 </div>
             </div>
         </div>
