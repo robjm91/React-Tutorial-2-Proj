@@ -21,8 +21,16 @@ class BookCreator extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log(this.state.title);
-        console.log(this.state.author);
+        const book = {
+            title: this.state.title,
+            author: this.state.author
+        }
+        this.props.addNewBook(book);
+        this.setState({
+            title: " ",
+            author: " "
+        });
+
     }
 
 
