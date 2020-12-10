@@ -20,13 +20,14 @@ class App extends Component {
             <div className = "container-fluid">
                 <TitleBar />
                 <div className = "row row-space">
-                    <div className = "col">
+                    <div className = "col-md-4">
                         {/*Button here to move to the previous book viewd*/}
                     </div>
-                    <div className = "col">
-                        {/*Display book with cover here*/}
+                    <div className = "col-md-4">
+                        <h1>{this.books[this.state.bookNumber].title}</h1>
+                        <h4>{this.books[0].author</h4>
                     </div>
-                    <div className = "col">
+                    <div className = "col-md-4">
                         {/*Button here to move to the previous book viewed*/}
                     </div>
                 </div>
