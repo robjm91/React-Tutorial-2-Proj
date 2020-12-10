@@ -3,12 +3,14 @@ import React, { Component } from "react";
 class BookCreator extends Component {
     constructor(props) {
         super(props); 
-        this.state = {}
+        this.state = {
             title: "",
             author: ""
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
 
     handleChange(event) {
         this.setState({
