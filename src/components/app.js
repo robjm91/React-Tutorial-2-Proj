@@ -25,7 +25,7 @@ class App extends Component {
                     </div>
                     <div className = "col-md-4">
                         <h1>{this.books[this.state.bookNumber].title}</h1>
-                        <h4>{this.books[this.state.bookNumber].author</h4>
+                        <h4>{this.books[this.state.bookNumber].author}</h4>
                     </div>
                     <div className = "col-md-4">
                         {/*Button here to move to the previous book viewed*/}
