@@ -9,7 +9,7 @@ class App extends Component {
             {title: "All the Light We Cannot See", author: "Anthony Doerr"},
             {title: "The First and Last Freedom", author: "Jiddu Krishnamurti"},
         ];
-        this.sate = {
+        this.state = {
             bookNumber: 0
         }
 
