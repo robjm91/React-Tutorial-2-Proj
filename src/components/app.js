@@ -17,9 +17,19 @@ class App extends Component {
      
     render() {
         return (
-            <div className="container-fluid">
+            <div className = "container-fluid">
                 <TitleBar />
-
+                <div className = "row row-space">
+                    <div className = "col">
+                        {/*Button here to move to the previous book viewd*/}
+                    </div>
+                    <div className = "col">
+                        {/*Display book with cover here*/}
+                    </div>
+                    <div className = "col">
+                        {/*Button here to move to the previous book viewed*/}
+                    </div>
+                </div>
             </div>
         );
     }
