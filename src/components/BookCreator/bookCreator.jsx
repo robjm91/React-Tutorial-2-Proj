@@ -7,6 +7,21 @@ class BookCreator extends Component {
             title: "",
             author: ""
     }
+
+    handleChange(event) {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        console.log(this.state.title);
+        console.log(this.state.author);
+    }
+
+
     render () {
         return (
             <div>
