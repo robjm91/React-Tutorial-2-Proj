@@ -37,6 +37,10 @@ class BookCreator extends Component {
     render () {
         return (
             <div>
+            <hr />
+            <center>
+                <h3>Add a new book!</h3>
+            </center>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row col-align">
                         <div className="col-md-4">
