@@ -16,6 +16,13 @@ class App extends Component {
 
     }
 
+    addNewBook() {
+        this.books.push(book);
+        this.setState({
+            bookNumber: this.books.length - 1
+        });
+    }
+
     goToNextBook() {
         let tempBookNumber = this.state.bookNumber;
         tempBookNumber++;
@@ -45,7 +52,8 @@ class App extends Component {
         return (
             <div className = "container-fluid">
                 <TitleBar />
-                <BookViewer book={this.books[this.state.bookNumber]} nextBook={() => this.goToNextBook()} previousBook = {() => this.goToPreviousBook()}/>
+                <BookViewer book={this.books[this.state.bookNumber]} nextBook={() => 
+                this.goToNextBook()} previousBook = {() => this.goToPreviousBook()}/>
             </div>
         );
     }
