@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TitleBar from "./TitleBar/titleBar";
 import BookViewer from "./BookViewer/bookViewer";
+import BookCreator from "./BookCreator/bookCreator";
 
 class App extends Component {
     constructor (props) {
@@ -17,7 +18,7 @@ class App extends Component {
     }
 
     addNewBook() {
-        this.books.push(book);
+        this.books.push(this.books);
         this.setState({
             bookNumber: this.books.length - 1
         });
@@ -54,6 +55,7 @@ class App extends Component {
                 <TitleBar />
                 <BookViewer book={this.books[this.state.bookNumber]} nextBook={() => 
                 this.goToNextBook()} previousBook = {() => this.goToPreviousBook()}/>
+                <BookCreator addNewBook={this.addNewBook.bind(this)}/>
             </div>
         );
     }
