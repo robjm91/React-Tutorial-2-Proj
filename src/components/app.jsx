@@ -33,6 +33,8 @@ class App extends Component {
         tempBookNumber--;
         if (tempBookNumber < 0)
             tempBookNumber = this.books.length - 1;
+            console.log(tempBookNumber);
+            console.log(this.state);
         this.setState({
             bookNumber: tempBookNumber
         });
