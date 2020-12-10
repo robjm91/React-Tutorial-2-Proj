@@ -18,7 +18,7 @@ class App extends Component {
     }
 
     addNewBook() {
-        this.books.push(this.books);
+        this.books.push(this.books); //in tutorial IS: (books); , SHOULD BE: (this.books);
         this.setState({
             bookNumber: this.books.length - 1
         });
