@@ -20,6 +20,8 @@ class App extends Component {
         tempBookNumber++;
         if (tempBookNumber === this.books.length) {
             tempBookNumber = 0;
+            console.log(tempBookNumber);
+            console.log(this.state);
         }
         this.setState({
             bookNumber: tempBookNumber
