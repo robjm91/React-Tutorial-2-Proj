@@ -3,7 +3,7 @@ import Book from "../Book/book";
 
 function BookViewer (props){
     return(
-        <div className = "row row-space">
+        <div className = "row row-spacer">
             <div className = "col-md-4">
                 <button onClick={() => props.previousBook()}>Previous Book</button>
             </div>
