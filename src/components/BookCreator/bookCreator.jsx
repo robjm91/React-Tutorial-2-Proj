@@ -27,8 +27,8 @@ class BookCreator extends Component {
         }
         this.props.addNewBook(book);
         this.setState({
-            title: " ",
-            author: " "
+            title: "",
+            author: ""
         });
 
     }

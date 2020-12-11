@@ -22,6 +22,7 @@ class App extends Component {
         this.setState({
             bookNumber: this.books.length - 1
         });
+        console.log(this.books);
     }
 
     goToNextBook() {
