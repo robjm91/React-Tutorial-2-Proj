@@ -1,7 +1,7 @@
 .footer {
-    background-color: red;
+    background-color:burlywood;
     width: 100%;
-    box-shadow: 0 50vh 0 50vh blue;
+    box-shadow: 0 50vh 0 50vh teal;
     text-align: center;
     margin-top: 2em;
 }
